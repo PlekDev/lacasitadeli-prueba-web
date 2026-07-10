@@ -49,7 +49,7 @@ export function ProductCard({ id, name, price, category, stock, imageUrl }: Prod
           />
         ) : (
           <div className="w-full h-full flex items-center justify-center text-on-surface-variant/20">
-            <span className="font-headline italic text-4xl">La Casita</span>
+            <span className="font-headline italic text-4xl">Mi Tienda</span>
           </div>
         )}
 

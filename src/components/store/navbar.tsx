@@ -37,7 +37,7 @@ export function Navbar() {
       <nav className="flex justify-between items-center px-8 max-w-7xl mx-auto">
         <div className="flex items-center gap-12">
           <Link href="/" className="text-2xl font-headline font-bold text-primary tracking-tight">
-            La Casita Deli
+            Mi Tienda
           </Link>
           <div className="hidden md:flex items-center gap-8 font-label text-[10px] uppercase tracking-[0.2em]">
             {navLinks.map((link) => {

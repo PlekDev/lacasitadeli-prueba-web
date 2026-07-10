@@ -1,4 +1,4 @@
-# La Casita - Documentación de Base de Datos
+# Documentación de Base de Datos
 
 ## Diagrama ER
 
@@ -49,7 +49,7 @@ Sucursales y almacenes del negocio.
 | Campo | Tipo | Descripción |
 |-------|------|-------------|
 | id | String | Identificador único |
-| name | String | Nombre (Almacén Central, Casita Market, etc.) |
+| name | String | Nombre (Almacén Central, Tienda Principal, etc.) |
 | type | String | Tipo: almacen, tienda, restaurante |
 | address | String? | Dirección física |
 | active | Boolean | Ubicación activa |

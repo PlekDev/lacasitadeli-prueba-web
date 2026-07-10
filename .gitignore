@@ -18,11 +18,7 @@ out/
 .output/
 
 # Next.js
-apps/web/.next/
-apps/web/out/
-
-# API / backend
-apps/api/dist/
+.next/
 
 # ========================
 # Environment variables

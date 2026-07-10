@@ -20,17 +20,15 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "La Casita Deli | Sabores Artesanales",
-  description: "Descubre la mejor selección de productos gourmet, repostería artesanal y cocina internacional en La Casita Delicatessen.",
-  keywords: ["La Casita", "Gourmet", "Deli", "Market", "Artesanal", "Comida"],
-  authors: [{ name: "La Casita Deli" }],
+  title: "Mi Tienda",
+  description: "Plantilla web lista para personalizar.",
   icons: {
     icon: "/logo.svg",
   },
   openGraph: {
-    title: "La Casita Deli | Sabores Artesanales",
-    description: "Productos gourmet y cocina artesanal entregados en tu hogar.",
-    siteName: "La Casita Deli",
+    title: "Mi Tienda",
+    description: "Plantilla web lista para personalizar.",
+    siteName: "Mi Tienda",
     type: "website",
   },
 };

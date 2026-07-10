@@ -1,13 +1,13 @@
-# La Casita POS - Sistema de Punto de Venta
+# Mi Tienda — Sistema de Punto de Venta
 
-Sistema integral de inventarios, ventas y punto de venta para La Casita.
+Plantilla web de inventarios, ventas y punto de venta (POS) lista para personalizar.
 
 ## 🚀 Despliegue en Vercel
 
 ### Paso 1: Crear base de datos PostgreSQL
 
 1. Ve a [neon.tech](https://neon.tech) y crea una cuenta gratis
-2. Crea un nuevo proyecto llamado "lacasita"
+2. Crea un nuevo proyecto
 3. Copia la **Connection string** (algo como: `postgresql://user:pass@ep-xxx.neon.tech/neondb?sslmode=require`)
 
 ### Paso 2: Configurar variables en Vercel
@@ -38,7 +38,7 @@ cp .env.example .env
 # Crear tablas
 bun run db:push
 
-# Poblar con datos de ejemplo
+# Poblar con datos base (ubicaciones, usuarios y categorías)
 bun run db:seed
 
 # Iniciar servidor
@@ -50,10 +50,10 @@ bun run dev
 ## 📦 Estructura del proyecto
 
 ```
-lacasita/
+mi-tienda/
 ├── prisma/
 │   ├── schema.prisma    # Esquema de base de datos
-│   └── seed.ts          # Datos de ejemplo
+│   └── seed.mjs         # Datos base
 ├── src/
 │   ├── app/             # Páginas Next.js
 │   ├── components/      # Componentes UI
@@ -68,8 +68,8 @@ lacasita/
 
 | Email | Contraseña | Rol |
 |-------|------------|-----|
-| admin@lacasita.com | admin123 | Administrador |
-| cajero1@lacasita.com | cajero123 | Cajero |
+| admin@example.com | admin123 | Administrador |
+| cajero1@example.com | cajero123 | Cajero |
 
 ---
 

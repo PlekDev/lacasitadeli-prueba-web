@@ -6,9 +6,9 @@ export function Footer() {
     <footer className="w-full mt-auto bg-surface-container-low border-t border-outline-variant/10">
       <div className="flex flex-col md:flex-row justify-between items-center px-12 py-12 max-w-7xl mx-auto w-full gap-8">
         <div className="flex flex-col items-center md:items-start">
-          <span className="font-headline font-bold text-xl text-primary mb-4">La Casita Deli</span>
+          <span className="font-headline font-bold text-xl text-primary mb-4">Mi Tienda</span>
           <p className="font-body uppercase text-[10px] tracking-widest text-on-surface-variant/60">
-            © {new Date().getFullYear()} La Casita Deli. Artisanal Quality.
+            © {new Date().getFullYear()} Mi Tienda. Artisanal Quality.
           </p>
         </div>
 

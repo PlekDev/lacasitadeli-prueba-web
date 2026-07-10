@@ -90,7 +90,7 @@ export default function POSPage() {
                 <Store className="h-6 w-6 text-white" />
               </div>
               <div>
-                <h1 className="text-xl font-bold text-gray-900">La Casita</h1>
+                <h1 className="text-xl font-bold text-gray-900">Mi Tienda</h1>
                 <p className="text-xs text-gray-500">Sistema de Punto de Venta</p>
               </div>
             </div>

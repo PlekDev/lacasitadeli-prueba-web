@@ -1,4 +1,4 @@
-# La Casita POS - Guía de Despliegue
+# Mi Tienda POS - Guía de Despliegue
 
 ## 🚀 Opción 1: Vercel (Recomendado)
 
@@ -6,7 +6,7 @@
 
 1. Ve a **[neon.tech](https://neon.tech)** y crea una cuenta gratis
 2. Haz clic en **"Create a project"**
-3. Nombra el proyecto: `lacasita`
+3. Nombra el proyecto como prefieras
 4. Copia la **Connection string** que aparece (ejemplo):
    ```
    postgresql://username:password@ep-xxx.us-east-2.aws.neon.tech/neondb?sslmode=require
@@ -42,8 +42,8 @@
 
 ```bash
 # 1. Clonar el repositorio
-git clone https://github.com/tu-usuario/lacasita.git
-cd lacasita
+git clone https://github.com/tu-usuario/tu-repo.git
+cd tu-repo
 
 # 2. Instalar Bun (si no lo tienes)
 curl -fsSL https://bun.sh/install | bash
@@ -59,7 +59,7 @@ cp .env.example .env
 # 5. Crear tablas
 bun run db:push
 
-# 6. Poblar con datos de ejemplo
+# 6. Poblar con datos base
 bun run db:seed
 
 # 7. Iniciar el servidor
@@ -73,7 +73,7 @@ bun run dev
 npm install -g pm2
 
 # Iniciar la aplicación
-pm2 start "bun run start" --name lacasita
+pm2 start "bun run start" --name mi-tienda
 
 # Guardar configuración
 pm2 save
@@ -86,12 +86,12 @@ pm2 startup
 
 ```bash
 # Construir imagen
-docker build -t lacasita-pos .
+docker build -t mi-tienda .
 
 # Ejecutar contenedor
 docker run -p 3000:3000 \
   -e DATABASE_URL="tu-url-de-postgres" \
-  lacasita-pos
+  mi-tienda
 ```
 
 ---
@@ -110,8 +110,8 @@ Después de desplegar, verifica:
 
 | Email | Contraseña | Rol |
 |-------|------------|-----|
-| admin@lacasita.com | admin123 | Administrador |
-| cajero1@lacasita.com | cajero123 | Cajero |
+| admin@example.com | admin123 | Administrador |
+| cajero1@example.com | cajero123 | Cajero |
 
 ---
 
